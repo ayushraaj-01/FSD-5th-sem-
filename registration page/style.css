@@ -1,0 +1,110 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background: linear-gradient(135deg, #eef4ff, #f8fbff);
+	color: #1f2937;
+}
+
+.page {
+	min-height: 100vh;
+	display: grid;
+	gap: 24px;
+	padding: 32px;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.card {
+	background: #ffffff;
+	border-radius: 16px;
+	padding: 24px;
+	box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.subtitle {
+	margin-top: 8px;
+	color: #6b7280;
+}
+
+.form {
+	display: grid;
+	gap: 16px;
+	margin-top: 20px;
+}
+
+.form label {
+	display: grid;
+	gap: 8px;
+	font-weight: 600;
+}
+
+.form input {
+	width: 100%;
+	padding: 12px 14px;
+	border: 1px solid #cbd5e1;
+	border-radius: 10px;
+	font-size: 1rem;
+}
+
+.form input:focus {
+	outline: none;
+	border-color: #2563eb;
+	box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.form button {
+	justify-self: start;
+	border: none;
+	border-radius: 10px;
+	padding: 12px 18px;
+	background: #2563eb;
+	color: #ffffff;
+	font-size: 1rem;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.form button:hover {
+	background: #1d4ed8;
+}
+
+.registrations {
+	display: grid;
+	gap: 16px;
+	margin-top: 16px;
+}
+
+.registration-item {
+	padding: 16px;
+	border: 1px solid #e5e7eb;
+	border-radius: 12px;
+	background: #f9fafb;
+}
+
+.registration-item h3 {
+	margin-top: 0;
+}
+
+.registration-item p,
+.empty-state {
+	margin: 6px 0 0;
+	color: #374151;
+}
+
+.empty-state {
+	color: #6b7280;
+}
+
+@media (max-width: 640px) {
+	.page {
+		padding: 16px;
+	}
+
+	.card {
+		padding: 18px;
+	}
+}

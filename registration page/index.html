@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page">
+        <section class="card">
+            <h1>Registration Form</h1>
+            <p class="subtitle">Enter your details and click Register to save each entry below.</p>
+
+            <form id="registrationForm" class="form">
+                <label>
+                    Name
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </label>
+
+                <label>
+                    Email
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </label>
+
+                <label>
+                    Password
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </label>
+
+                <button type="submit">Register</button>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Registered Users</h2>
+            <div id="registrations" class="registrations"></div>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
